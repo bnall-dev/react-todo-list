@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#app {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: url('https://storage.needpix.com/rsynced_images/background-2317979_1280.jpg');
+  height: 100%;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 74px 16px 16px 16px;
+  font-family: 'Special Elite', cursive;
+}
+
+#list {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'Permanent Marker', cursive;
+  color: rgb(122, 0, 0);
+  font-size: 40px;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  justify-content: flex-start;
+  height: 395px;
+  overflow: scroll;
+}
+
+#paper {
+  width: 500px;
+  height: 700px;
+  background-image: url('https://cdn140.picsart.com/263382426014212.png?r1024x1024');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px;
+}
+
+label {
+  font-family: 'Special Elite', cursive;
+  color: rgba(0, 0, 0, 0.24);
+}
+
+#toggleBox {
+  display: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#inputField {
+  background-color: rgba(255, 255, 255, 0);
+  font-family: 'Permanent Marker', cursive;
+  font-size: 16px;
+  text-align: center;
+  margin: 0px 0 0 0;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+#submitButton {
+  margin: 8px 0 38px 0;
+  border: none;
+  background-color: rgb(122, 0, 0);
   color: white;
+  font-family: 'Special Elite', cursive;
+  width: fit-content;
+  padding: 4px 12px;
+  border-radius: 5px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#submitButton:active {
+  background-color: black;
 }
